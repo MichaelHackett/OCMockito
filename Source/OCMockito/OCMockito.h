@@ -16,7 +16,7 @@
 #import "MKTProtocolMock.h"
 
 
-#define MKTMock(aClass) (id)[MKTObjectMock mockForClass:aClass]
+#define MKTMock(aClass) (id)[MKTObjectMock mockForClass:[aClass class]]
 
 /**
  Returns a mock object of a given class.
@@ -29,7 +29,7 @@
 #endif
 
 
-#define MKTMockClass(aClass) (id)[MKTClassObjectMock mockForClass:aClass]
+#define MKTMockClass(aClass) (id)[MKTClassObjectMock mockForClass:[aClass class]]
 
 /**
  Returns a mock class object of a given class.
@@ -42,7 +42,7 @@
 #endif
 
 
-#define MKTMockProtocol(aProtocol) (id)[MKTProtocolMock mockForProtocol:aProtocol]
+#define MKTMockProtocol(aProtocol) (id)[MKTProtocolMock mockForProtocol:@protocol(aProtocol)]
 
 /**
  Returns a mock object implementing a given protocol.
@@ -55,7 +55,7 @@
 #endif
 
 
-#define MKTMockObjectAndProtocol(aClass, aProtocol) (id)[MKTObjectAndProtocolMock mockForClass:aClass protocol:aProtocol]
+#define MKTMockObjectAndProtocol(aClass, aProtocol) (id)[MKTObjectAndProtocolMock mockForClass:[aClass class] protocol:@protocol(aProtocol)]
 
 /**
  Returns a mock object of a given class that also implements a given protocol.
