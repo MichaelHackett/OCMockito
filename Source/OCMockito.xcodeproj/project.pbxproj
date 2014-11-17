@@ -42,7 +42,6 @@
 		0827E8741353EAD900C39A57 /* MKTInvocationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0827E8711353EAD900C39A57 /* MKTInvocationContainer.m */; };
 		0827E8751353EAD900C39A57 /* MKTInvocationContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0827E8711353EAD900C39A57 /* MKTInvocationContainer.m */; };
 		0859DCD4191F0D1600513490 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0859DCD3191F0D1600513490 /* OCHamcrest.framework */; };
-		0859DCD7191F0D2100513490 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0859DCD6191F0D2100513490 /* OCHamcrestIOS.framework */; };
 		085A8BCB15071F7B0018EC66 /* MKTProtocolMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A8BC915071F7A0018EC66 /* MKTProtocolMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		085A8BCD15071F7B0018EC66 /* MKTProtocolMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 085A8BCA15071F7A0018EC66 /* MKTProtocolMock.m */; };
 		085A8BCE15071F7B0018EC66 /* MKTProtocolMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 085A8BCA15071F7A0018EC66 /* MKTProtocolMock.m */; };
@@ -81,6 +80,7 @@
 		361533C6153F275800BB982B /* MKTAtLeastTimes.h in Headers */ = {isa = PBXBuildFile; fileRef = 361533C4153F275800BB982B /* MKTAtLeastTimes.h */; };
 		361533C7153F275800BB982B /* MKTAtLeastTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 361533C5153F275800BB982B /* MKTAtLeastTimes.m */; };
 		361533CA153F276300BB982B /* MKTAtLeastTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 361533C5153F275800BB982B /* MKTAtLeastTimes.m */; };
+		4CD5BF771A1977C3003A6321 /* libochamcrest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD5BF761A1977C3003A6321 /* libochamcrest.a */; };
 		4CF705D61A17F45000C187A2 /* OCMockito.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0827E83313526E7300C39A57 /* OCMockito.h */; };
 		4CF705D71A17F45000C187A2 /* MKTArgumentCaptor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB33338EB72A442ED6C94F84 /* MKTArgumentCaptor.h */; };
 		4CF705D81A17F45000C187A2 /* MKTBaseMockObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FD4B281509BEA90004E1FA /* MKTBaseMockObject.h */; };
@@ -393,6 +393,7 @@
 		361533C4153F275800BB982B /* MKTAtLeastTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTAtLeastTimes.h; sourceTree = "<group>"; };
 		361533C5153F275800BB982B /* MKTAtLeastTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTAtLeastTimes.m; sourceTree = "<group>"; };
 		361533CB153F283800BB982B /* MKTAtLeastTimesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTAtLeastTimesTests.m; sourceTree = "<group>"; };
+		4CD5BF761A1977C3003A6321 /* libochamcrest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libochamcrest.a; path = "../../OCHamcrest/Source/build/Debug-iphoneos/libochamcrest.a"; sourceTree = "<group>"; };
 		638F68D5150FC21A0081DEE6 /* MKTClassObjectMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTClassObjectMock.h; sourceTree = "<group>"; };
 		638F68D6150FC21A0081DEE6 /* MKTClassObjectMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTClassObjectMock.m; sourceTree = "<group>"; };
 		638F68DC150FC3210081DEE6 /* MKTClassObjectMockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTClassObjectMockTests.m; sourceTree = "<group>"; };
@@ -488,8 +489,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD5BF771A1977C3003A6321 /* libochamcrest.a in Frameworks */,
 				085D2FF61351254000EBBE91 /* Foundation.framework in Frameworks */,
-				0859DCD7191F0D2100513490 /* OCHamcrestIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +556,7 @@
 		08BDD5AB1350C59C00E5A443 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CD5BF761A1977C3003A6321 /* libochamcrest.a */,
 				08BDD5B11350C59C00E5A443 /* Foundation.framework */,
 				08C61DB214E23938003D0843 /* SenTestingKit.framework */,
 				0859DCD3191F0D1600513490 /* OCHamcrest.framework */,
